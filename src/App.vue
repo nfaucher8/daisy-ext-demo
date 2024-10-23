@@ -21,6 +21,9 @@ import TheWelcome from './components/TheWelcome.vue'
   <main>
     <TheWelcome />
   </main>
+
+  <button class="btn btn-primary">Click Me</button>
+  <button class="btn btn-primary-50">Click Me</button>
 </template>
 
 <style scoped>
