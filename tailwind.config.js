@@ -7,6 +7,7 @@ export default {
     extend: {},
   },
   plugins: [
+    require('daisy-ext'),
     require('daisyui')
   ],
 }

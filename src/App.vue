@@ -22,8 +22,13 @@ import TheWelcome from './components/TheWelcome.vue'
     <TheWelcome />
   </main>
 
-  <button class="btn btn-primary">Click Me</button>
-  <button class="btn btn-primary-50">Click Me</button>
+  <button class="ring-2  ring-primary-50-secondary ring-offset-primary-950-secondary ring-offset-4">
+    Create account
+  </button>
+
+  <button class="bg-primary-500 shadow-lg text-primary-850/50">
+    Create account
+  </button>
 </template>
 
 <style scoped>
