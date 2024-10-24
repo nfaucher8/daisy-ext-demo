@@ -1,37 +1,37 @@
 <script setup lang="ts">
 const DAISYUI_THEMES = [
-  'light',
-  'dark',
-  'cupcake',
-  'bumblebee',
-  'emerald',
-  'corporate',
-  'synthwave',
-  'retro',
-  'cyberpunk',
-  'valentine',
-  'halloween',
-  'garden',
-  'forest',
-  'aqua',
-  'lofi',
-  'pastel',
-  'fantasy',
-  'wireframe',
-  'black',
-  'luxury',
-  'dracula',
-  'cmyk',
-  'autumn',
-  'business',
-  'acid',
-  'lemonade',
-  'night',
-  'coffee',
-  'winter',
-  'dim',
-  'nord',
-  'sunset',
+  "light",
+  "dark",
+  "cupcake",
+  "bumblebee",
+  "emerald",
+  "corporate",
+  "synthwave",
+  "retro",
+  "cyberpunk",
+  "valentine",
+  "halloween",
+  "garden",
+  "forest",
+  "aqua",
+  "lofi",
+  "pastel",
+  "fantasy",
+  "wireframe",
+  "black",
+  "luxury",
+  "dracula",
+  "cmyk",
+  "autumn",
+  "business",
+  "acid",
+  "lemonade",
+  "night",
+  "coffee",
+  "winter",
+  "dim",
+  "nord",
+  "sunset"
 ]
 
 const updateTheme = (theme: string) => {
@@ -42,9 +42,7 @@ const updateTheme = (theme: string) => {
   <div class="navbar">
     <div class="flex-1 gap-2 content-center">
       <div class="text-xl font-bold px-2">daisy-ext</div>
-      <div class="link link-hover inline-block font-mono text-xs pt-0.5">
-        1.0.0
-      </div>
+      <div class="link link-hover inline-block font-mono text-xs pt-0.5">1.0.0</div>
     </div>
     <div class="flex-none">
       <div class="dropdown dropdown-end">
@@ -57,9 +55,7 @@ const updateTheme = (theme: string) => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 2048 2048"
           >
-            <path
-              d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"
-            ></path>
+            <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
           </svg>
         </button>
         <div
