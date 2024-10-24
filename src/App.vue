@@ -22,11 +22,85 @@ import TheWelcome from './components/TheWelcome.vue'
     <TheWelcome />
   </main>
 
-  <button class="ring-2  ring-primary-50-secondary ring-offset-primary-950-secondary ring-offset-4">
+<!--  <button class="ring-2  ring-neutral-350-secondary ring-offset-neutral-650-secondary ring-offset-4">-->
+<!--    Create account-->
+<!--  </button>-->
+
+  <button class="bg-neutral shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-950-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-900-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-850-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-800-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-750-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-700-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-650-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-600-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-550-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-500-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-450-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-400-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-350-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-300-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-250-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-200-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-150-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-100-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-neutral-50-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-secondary shadow-lg text-neutral-850/50">
     Create account
   </button>
 
-  <button class="bg-primary-500 shadow-lg text-primary-850/50">
+  <br/>
+
+  <button class="bg-neutral shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-primary shadow-lg text-neutral-850/50">
+    Create account
+  </button><button class="bg-secondary shadow-lg text-neutral-850/50">
+    Create account
+  </button>
+  <button class="bg-primary-500-secondary text-primary-content shadow-lg">
     Create account
   </button>
 </template>
