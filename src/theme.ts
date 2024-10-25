@@ -1,3 +1,5 @@
+import * as localforage from "localforage";
+
 export const themes = [
   "light",
   "dark",
@@ -33,7 +35,7 @@ export const themes = [
   "sunset"
 ]
 
-export const changeTheme = (theme: string) => {
+export const changeTheme = async (theme: string) => {
   // Early Exit: Invalid theme
   if (themes.indexOf(theme) <= -1) {
     console.log("Invalid theme selected: ", theme)
@@ -41,4 +43,11 @@ export const changeTheme = (theme: string) => {
   }
 
   document.querySelector("html")?.setAttribute("data-theme", theme)
+  await localforage.setItem("theme", theme)
+}
+
+export const loadSavedTheme = async () => {
+  const theme = await localforage.getItem("theme");
+
+  await changeTheme(theme);
 }

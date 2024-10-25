@@ -13,6 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "localforage": "^1.10.0",
     "vue": "^3.5.12"
   },
   "devDependencies": {
