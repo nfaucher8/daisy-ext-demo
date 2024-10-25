@@ -1,48 +1,13 @@
 <script setup lang="ts">
-const DAISYUI_THEMES = [
-  "light",
-  "dark",
-  "cupcake",
-  "bumblebee",
-  "emerald",
-  "corporate",
-  "synthwave",
-  "retro",
-  "cyberpunk",
-  "valentine",
-  "halloween",
-  "garden",
-  "forest",
-  "aqua",
-  "lofi",
-  "pastel",
-  "fantasy",
-  "wireframe",
-  "black",
-  "luxury",
-  "dracula",
-  "cmyk",
-  "autumn",
-  "business",
-  "acid",
-  "lemonade",
-  "night",
-  "coffee",
-  "winter",
-  "dim",
-  "nord",
-  "sunset"
-]
-
-const updateTheme = (theme: string) => {
-  alert(theme)
-}
+import { changeTheme, themes } from "@/theme"
 </script>
 <template>
   <div class="navbar">
-    <div class="flex-1 gap-2 content-center">
-      <div class="text-xl font-bold px-2">daisy-ext</div>
-      <div class="link link-hover inline-block font-mono text-xs pt-0.5">1.0.0</div>
+    <div class="flex-1">
+      <div class="flex gap-2 items-center">
+        <div class="text-xl font-bold px-2">daisy-ext</div>
+        <div class="link link-hover font-mono text-xs leading-1 -mb-1.5">1.0.0</div>
+      </div>
     </div>
     <div class="flex-none">
       <div class="dropdown dropdown-end">
@@ -59,12 +24,12 @@ const updateTheme = (theme: string) => {
           </svg>
         </button>
         <div
-          class="menu dropdown-content bg-base-200 text-base-content rounded-box z-[1] w-56 h-[28.6rem] max-h-[calc(100vh-10rem)] p-2 mt-0.5 shadow overflow-y-auto border border-white/5 shadow-2xl outline outline-1 outline-black/5"
+          class="menu dropdown-content bg-base-200 text-base-content rounded-box z-[1] w-56 h-[28.6rem] max-h-[calc(100vh-10rem)] p-2 mt-0.5 shadow overflow-y-auto border border-white/5 shadow-2xl outline outline-1 outline-base-content-300"
         >
           <div class="grid grid-cols-1 gap-3">
-            <template v-for="theme in DAISYUI_THEMES" :key="theme">
+            <template v-for="theme in themes" :key="theme">
               <button
-                @click="updateTheme(theme)"
+                @click="changeTheme(theme)"
                 class="outline-base-content text-start outline-offset-4 [&amp;_svg]:visible"
                 data-act-class="[&amp;_svg]:visible"
                 :data-set-theme="theme"
