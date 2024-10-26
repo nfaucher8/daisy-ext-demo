@@ -1,4 +1,4 @@
-import * as localforage from "localforage";
+import * as localforage from "localforage"
 
 export const themes = [
   "light",
@@ -47,7 +47,9 @@ export const changeTheme = async (theme: string) => {
 }
 
 export const loadSavedTheme = async () => {
-  const theme = await localforage.getItem("theme");
+  const theme = await localforage.getItem<string>("theme")
 
-  await changeTheme(theme);
+  if (theme) {
+    await changeTheme(theme as string)
+  }
 }
