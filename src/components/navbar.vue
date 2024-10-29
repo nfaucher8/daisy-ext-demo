@@ -3,12 +3,7 @@ import { changeTheme, themes } from "@/theme"
 </script>
 <template>
   <div class="navbar">
-    <div class="flex-1">
-      <div class="flex gap-2 items-center">
-        <div class="text-xl font-bold px-2">daisy-ext</div>
-        <div class="link link-hover font-mono text-xs leading-1 -mb-1.5">1.0.0</div>
-      </div>
-    </div>
+    <div class="flex-1" />
     <div class="flex-none">
       <div class="dropdown dropdown-end">
         <button role="button" class="btn btn-ghost">
@@ -69,6 +64,9 @@ import { changeTheme, themes } from "@/theme"
           </div>
         </div>
       </div>
+    </div>
+    <div>
+      <slot/>
     </div>
   </div>
 </template>
