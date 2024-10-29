@@ -14,7 +14,7 @@ import { Icon } from "@vicons/utils"
       </defs>
     </svg>
   </div>
-  <div class="h-screen w-60">
+  <div class="w-60">
     <ul class="menu">
       <li>
         <a>

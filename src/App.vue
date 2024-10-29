@@ -5,4 +5,12 @@ import Sidebar from "@/components/sidebar.vue"
 <template>
   <Navbar />
   <Sidebar />
+  <Suspense>
+    <template #default>
+      <RouterView/>
+    </template>
+    <template #fallback>
+      
+    </template>
+  </Suspense>
 </template>
