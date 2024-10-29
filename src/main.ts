@@ -1,9 +1,9 @@
-import { createApp, onBeforeMount } from "vue"
-
-import "./_tailwind.css"
+import { createApp } from "vue"
 
 import App from "./App.vue"
+import "./_tailwind.css"
 import router from "./router"
+
 import { loadSavedTheme } from "@/theme"
 
 loadSavedTheme().then(() => {})

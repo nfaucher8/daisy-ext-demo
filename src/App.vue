@@ -7,10 +7,8 @@ import Sidebar from "@/components/sidebar.vue"
   <Sidebar />
   <Suspense>
     <template #default>
-      <RouterView/>
+      <RouterView />
     </template>
-    <template #fallback>
-      
-    </template>
+    <template #fallback> </template>
   </Suspense>
 </template>
