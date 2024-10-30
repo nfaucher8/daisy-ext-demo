@@ -6,6 +6,7 @@ import router from "unplugin-vue-router/vite"
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/daisy-ext-demo/",
   plugins: [
     router({
       routesFolder: "src/pages"
