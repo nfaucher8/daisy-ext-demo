@@ -30,8 +30,15 @@ const additionalColors = {
 </script>
 <template>
   <div class="px-16 max-w-7xl mx-auto">
-    <h1 id="basic" class="text-4xl font-bold pb-2">Basic Colors</h1>
-    <p>These colors are mixed against <code>base-100</code></p>
+    <h1 id="basic" class="text-4xl font-bold pb-4">Basic Colors</h1>
+    <p>These are the basic colors included with <code>daisy-ext</code>. They are are a combination of the color name and
+      <code>base-100</code>.
+    </p>
+    <br />
+    <p>
+      The shade number is the precentage used when mixing the color and <code>base-100</code>.
+      For example <code>primary-750</code> is 75% <code>primary</code> and 25% <code>base-100</code>.
+    </p>
     <br />
 
     <template v-for="(name, key) in colors">
@@ -42,14 +49,10 @@ const additionalColors = {
       <br />
     </template>
 
-    <h1 id="additional" class="text-4xl font-bold pb-2">Additional Colors</h1>
+    <h1 id="additional" class="text-4xl font-bold pb-4">Additional Colors</h1>
     <p>
-      These colors are not very useful on their own and should only be used with
-      <RouterLink
-        to="/colors/advanced"
-        class="link text-primary-800-base-content hover:text-primary-400-base-content"
-        >advanced colors</RouterLink
-      >.
+      These colors are not very useful but they are included in <code>daisy-ext</code> and are included
+      here for reference.
     </p>
     <br />
 
