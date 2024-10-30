@@ -37,7 +37,7 @@
       <b>daisy-ext</b>
       should now be installed. The colors can be used the same way any other
       <b>DaisyUI</b>
-      color can be used. You can preview some of the colors added by it
+      color. You can preview some of the colors added
       <b>
         <RouterLink to="/colors/basic" class="link hover:text-primary-800-base-content">
           here

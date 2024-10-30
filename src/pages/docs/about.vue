@@ -26,8 +26,16 @@
       to mix colors dynamically in the browser.
     </p>
     <br />
+    <p>
+      This adds the ability to fine tune colors by using shades without having to specify additional colors in themes.
+    </p>
+    <br />
+    <p>
+      Also by being a <b>Tailwind</b> plugin unused styles are automatically tree shaken. This means only the shades
+      used will be included in the final app which helps keep production stylesheet sizes small.
+    </p>
+    <br />
     <h1 class="text-4xl font-bold pb-4">Why?</h1>
-    <h2 class="text-2xl font-bold pb-2">Opacity</h2>
     <p>
       <b>Tailwind</b>
       provides the ability to modify a color by adjusting its opacity. This can be useful when
@@ -45,19 +53,19 @@
     </p>
     <div class="flex gap-2 justify-center mx-auto py-4">
       <div class="grow flex gap-2 justify-center py-8 mx-auto rounded-btn">
-        <div class="h-16 w-48 rounded-btn bg-primary/75 relative">
-          <code class="absolute bottom-0 start-4 text-primary-content">primary/75</code>
-        </div>
         <div class="h-16 w-48 rounded-btn bg-primary-750 relative">
           <code class="absolute bottom-0 start-4 text-primary-content">primary-750</code>
+        </div>
+        <div class="h-16 w-48 rounded-btn bg-primary/75 relative">
+          <code class="absolute bottom-0 start-4 text-primary-content">primary/75</code>
         </div>
       </div>
       <div class="grow flex gap-2 justify-center py-8 mx-auto bg-accent checkerboard rounded-btn">
-        <div class="h-16 w-48 rounded-btn bg-primary/75 relative">
-          <code class="absolute bottom-0 start-4 text-primary-content">primary/75</code>
-        </div>
         <div class="h-16 w-48 rounded-btn bg-primary-750 relative">
           <code class="absolute bottom-0 start-4 text-primary-content">primary-750</code>
+        </div>
+        <div class="h-16 w-48 rounded-btn bg-primary/75 relative">
+          <code class="absolute bottom-0 start-4 text-primary-content">primary/75</code>
         </div>
       </div>
     </div>
@@ -76,7 +84,6 @@
         </div>
       </div>
     </div>
-    <h2 class="text-2xl font-bold pb-2">Contrast</h2>
     <p>
       By default <b>DaisyUI</b> mixes all buttons against <b>black</b>
       to generate its hover states. This is fine for light buttons like
@@ -178,3 +185,5 @@
   background-position: top left;
 }
 </style>
+<script setup lang="ts">
+</script>
