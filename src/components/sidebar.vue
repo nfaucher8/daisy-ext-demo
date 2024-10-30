@@ -3,6 +3,10 @@ import { ShapeIntersect16Filled } from "@vicons/fluent"
 import { Book2, ChevronDown, Shape } from "@vicons/tabler"
 import { Icon } from "@vicons/utils"
 import { ref } from "vue"
+import { useRouter } from "vue-router";
+
+
+const router = useRouter()
 
 const showDocs = ref(true)
 const showColors = ref(true)
@@ -23,6 +27,10 @@ const toggleColors = (state?: boolean) => {
   }
 
   showColors.value = state
+}
+
+const activeRoute = (expectedRoute: string) => {
+  return router.currentRoute.value.fullPath === expectedRoute ? "active": ""
 }
 </script>
 <template>
@@ -56,9 +64,9 @@ const toggleColors = (state?: boolean) => {
     </li>
     <li v-show="showDocs">
       <ul class="menu gap-0.5 py-0 pe-0">
-        <li><a>About</a></li>
-        <li><a>Install</a></li>
-        <li><a>Getting Started</a></li>
+        <li><RouterLink to="/docs/about" :class="activeRoute('/docs/about')">About</RouterLink></li>
+        <li><RouterLink to="/docs/install" :class="activeRoute('/docs/install')">Install</RouterLink></li>
+        <li><RouterLink to="/docs/getting-started" :class="activeRoute('/docs/getting-started')">Getting Started</RouterLink></li>
       </ul>
     </li>
     <li>
@@ -74,17 +82,17 @@ const toggleColors = (state?: boolean) => {
     </li>
     <li v-show="showColors">
       <ul class="menu gap-0.5 py-0 pe-0">
-        <li><a>Basic Colors</a></li>
-        <li><a>Advanced Colors</a></li>
+        <li><RouterLink to="/colors/basic" :class="activeRoute('/colors/basic')">Basic Colors</RouterLink></li>
+        <li><RouterLink to="/colors/advanced" :class="activeRoute('/colors/advanced')">Advanced Colors</RouterLink></li>
       </ul>
     </li>
     <li>
-      <div @click="toggleExamples()">
+      <RouterLink to="/examples" :class="activeRoute('/examples')">
         <Icon class="text-fuchsia-400" size="23">
           <Shape />
         </Icon>
         Examples
-      </div>
+      </RouterLink>
     </li>
   </ul>
 </template>

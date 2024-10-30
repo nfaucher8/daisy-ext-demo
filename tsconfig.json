@@ -1,4 +1,12 @@
 {
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "skipLibCheck": true
+  },
   "files": [],
   "references": [
     {
@@ -7,12 +15,5 @@
     {
       "path": "./tsconfig.app.json"
     }
-  ],
-  "include": [
-    "env.d.ts",
-    "typed-router.d.ts"
-  ],
-  "compilerOptions": {
-    "moduleResolution": "Bundler",
-  }
+  ]
 }

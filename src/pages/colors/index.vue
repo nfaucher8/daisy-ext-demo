@@ -2,7 +2,7 @@
 import { definePage } from "unplugin-vue-router/runtime"
 
 definePage({
-  redirect: "/docs"
+  redirect: "/colors/basic"
 })
 </script>
 <template></template>
