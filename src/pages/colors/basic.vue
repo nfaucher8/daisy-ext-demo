@@ -30,7 +30,7 @@ const colors = {
 </script>
 <template>
   <div class="px-16 max-w-7xl mx-auto">
-    <h1 id="basic" class="text-4xl font-bold pb-4">Basic Colors</h1>
+    <h1 class="text-4xl font-bold pb-4">Basic Colors</h1>
     <p>
       Basic colors in
       <b>daisy-ext</b>

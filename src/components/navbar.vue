@@ -6,7 +6,7 @@ import { changeTheme, themes } from "@/theme"
     <div class="flex-1" />
     <div class="flex-none">
       <div class="dropdown dropdown-end">
-        <button @click="toggleTheme" role="button" class="btn btn-ghost">
+        <button role="button" class="btn btn-ghost">
           <span class="font-normal">Theme</span>
           <svg
             width="12px"

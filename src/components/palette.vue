@@ -36,7 +36,7 @@ defineProps<{
       <template v-for="shade in shades" :key="shade">
         <template v-if="shade">
           <div>
-            <Swatch :firstColor="firstColor" :shade="shade" :secondColor="secondColor"/>
+            <Swatch :firstColor="firstColor" :shade="shade" :secondColor="secondColor" />
             <code class="text-xs">{{ firstColor }}-{{ shade }}-{{ secondColor }}</code>
           </div>
         </template>

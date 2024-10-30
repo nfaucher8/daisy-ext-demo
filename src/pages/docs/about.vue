@@ -1,6 +1,6 @@
 <template>
   <div class="px-16 max-w-7xl mx-auto">
-    <h1 id="basic" class="text-4xl font-bold pb-4">About</h1>
+    <h1 class="text-4xl font-bold pb-4">About</h1>
     <p>
       <b>daisy-ext</b>
       is a
@@ -178,4 +178,3 @@
   background-position: top left;
 }
 </style>
-<script setup lang="ts"></script>
