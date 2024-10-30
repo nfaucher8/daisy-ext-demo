@@ -13,20 +13,20 @@ const colors = {
   ERROR: "Error"
 }
 
-const additionalColors = {
-  BASE_100: "Base 100",
-  BASE_200: "Base 200",
-  BASE_300: "Base 300",
-  BASE_CONTENT: "Base Content",
-  PRIMARY_CONTENT: "Primary Content",
-  SECONDARY_CONTENT: "Secondary Content",
-  ACCENT_CONTENT: "Accent Content",
-  NEUTRAL_CONTENT: "Neutral Content",
-  INFO_CONTENT: "Info Content",
-  SUCCESS_CONTENT: "Success Content",
-  WARNING_CONTENT: "Success Content",
-  ERROR_CONTENT: "Success Content"
-}
+// const additionalColors = {
+//   BASE_100: "Base 100",
+//   BASE_200: "Base 200",
+//   BASE_300: "Base 300",
+//   BASE_CONTENT: "Base Content",
+//   PRIMARY_CONTENT: "Primary Content",
+//   SECONDARY_CONTENT: "Secondary Content",
+//   ACCENT_CONTENT: "Accent Content",
+//   NEUTRAL_CONTENT: "Neutral Content",
+//   INFO_CONTENT: "Info Content",
+//   SUCCESS_CONTENT: "Success Content",
+//   WARNING_CONTENT: "Success Content",
+//   ERROR_CONTENT: "Success Content"
+// }
 </script>
 <template>
   <div class="px-16 max-w-7xl mx-auto">

@@ -67,11 +67,6 @@ const activeRoute = (expectedRoute: string) => {
         <li>
           <RouterLink to="/docs/install" :class="activeRoute('/docs/install')">Install</RouterLink>
         </li>
-        <li>
-          <RouterLink to="/docs/getting-started" :class="activeRoute('/docs/getting-started')">
-            Getting Started
-          </RouterLink>
-        </li>
       </ul>
     </li>
     <li>

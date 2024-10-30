@@ -32,11 +32,29 @@ defineProps<{
 </script>
 <template>
   <div class="grid grid-cols-4 gap-2">
-    <template v-for="shade in shades" :key="shade">
-      <div>
-        <Swatch :firstColor="firstColor" :shade="shade" />
-        <code>{{ firstColor }}{{ shade ? "-" : "" }}{{ shade }}</code>
-      </div>
+    <template v-if="secondColor">
+      <template v-for="shade in shades" :key="shade">
+        <template v-if="shade">
+          <div>
+            <Swatch :firstColor="firstColor" :shade="shade" :secondColor="secondColor"/>
+            <code class="text-xs">{{ firstColor }}-{{ shade }}-{{ secondColor }}</code>
+          </div>
+        </template>
+        <template v-else>
+          <div>
+            <Swatch :firstColor="firstColor" />
+            <code class="text-xs">{{ firstColor }}</code>
+          </div>
+        </template>
+      </template>
+    </template>
+    <template v-else>
+      <template v-for="shade in shades" :key="shade">
+        <div>
+          <Swatch :firstColor="firstColor" :shade="shade" />
+          <code>{{ firstColor }}{{ shade ? "-" : "" }}{{ shade }}</code>
+        </div>
+      </template>
     </template>
   </div>
 </template>
