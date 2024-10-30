@@ -2,8 +2,8 @@
 import { Color } from "@/constants"
 
 const props = defineProps<{
-  firstColor: Color,
-  secondColor?: Color,
+  firstColor: Color
+  secondColor?: Color
   shade?: number
 }>()
 </script>

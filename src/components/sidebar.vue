@@ -3,8 +3,7 @@ import { ShapeIntersect16Filled } from "@vicons/fluent"
 import { Book2, ChevronDown, Shape } from "@vicons/tabler"
 import { Icon } from "@vicons/utils"
 import { ref } from "vue"
-import { useRouter } from "vue-router";
-
+import { useRouter } from "vue-router"
 
 const router = useRouter()
 
@@ -30,7 +29,7 @@ const toggleColors = (state?: boolean) => {
 }
 
 const activeRoute = (expectedRoute: string) => {
-  return router.currentRoute.value.fullPath === expectedRoute ? "active": ""
+  return router.currentRoute.value.fullPath.startsWith(expectedRoute) ? "active" : ""
 }
 </script>
 <template>
@@ -65,8 +64,14 @@ const activeRoute = (expectedRoute: string) => {
     <li v-show="showDocs">
       <ul class="menu gap-0.5 py-0 pe-0">
         <li><RouterLink to="/docs/about" :class="activeRoute('/docs/about')">About</RouterLink></li>
-        <li><RouterLink to="/docs/install" :class="activeRoute('/docs/install')">Install</RouterLink></li>
-        <li><RouterLink to="/docs/getting-started" :class="activeRoute('/docs/getting-started')">Getting Started</RouterLink></li>
+        <li>
+          <RouterLink to="/docs/install" :class="activeRoute('/docs/install')">Install</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/docs/getting-started" :class="activeRoute('/docs/getting-started')"
+            >Getting Started</RouterLink
+          >
+        </li>
       </ul>
     </li>
     <li>
@@ -82,8 +87,16 @@ const activeRoute = (expectedRoute: string) => {
     </li>
     <li v-show="showColors">
       <ul class="menu gap-0.5 py-0 pe-0">
-        <li><RouterLink to="/colors/basic" :class="activeRoute('/colors/basic')">Basic Colors</RouterLink></li>
-        <li><RouterLink to="/colors/advanced" :class="activeRoute('/colors/advanced')">Advanced Colors</RouterLink></li>
+        <li>
+          <RouterLink to="/colors/basic" :class="activeRoute('/colors/basic')"
+            >Basic Colors</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink to="/colors/advanced" :class="activeRoute('/colors/advanced')"
+            >Advanced Colors</RouterLink
+          >
+        </li>
       </ul>
     </li>
     <li>

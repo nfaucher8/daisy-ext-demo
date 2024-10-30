@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { type Color } from "@/constants"
-
 import Swatch from "@/components/swatch.vue"
+import { type Color } from "@/constants"
 
 const shades = [
   undefined,
@@ -27,17 +26,17 @@ const shades = [
 ]
 
 const props = defineProps<{
-  firstColor: Color,
+  firstColor: Color
   secondColor?: Color
 }>()
 </script>
 <template>
-<div class="grid grid-cols-4 gap-2">
-  <template v-for="shade in shades">
-    <div>
-      <Swatch :firstColor="firstColor" :shade="shade" />
-      <code>{{firstColor}}{{shade ? '-' : ''}}{{shade}}</code>
-    </div>
-  </template>
-</div>
+  <div class="grid grid-cols-4 gap-2">
+    <template v-for="shade in shades">
+      <div>
+        <Swatch :firstColor="firstColor" :shade="shade" />
+        <code>{{ firstColor }}{{ shade ? "-" : "" }}{{ shade }}</code>
+      </div>
+    </template>
+  </div>
 </template>

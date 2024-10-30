@@ -6,7 +6,7 @@ import { changeTheme, themes } from "@/theme"
     <div class="flex-1" />
     <div class="flex-none">
       <div class="dropdown dropdown-end">
-        <button role="button" class="btn btn-ghost">
+        <button @click="toggleTheme" role="button" class="btn btn-ghost">
           <span class="font-normal">Theme</span>
           <svg
             width="12px"
@@ -19,7 +19,7 @@ import { changeTheme, themes } from "@/theme"
           </svg>
         </button>
         <div
-          class="menu dropdown-content bg-base-200 text-base-content rounded-box z-[1] w-56 h-[28.6rem] max-h-[calc(100vh-10rem)] p-2 mt-0.5 shadow overflow-y-auto border border-white/5 shadow-2xl outline outline-1 outline-base-content-300"
+          class="menu dropdown-content bg-base-200 text-base-content rounded-box w-56 h-[28.6rem] max-h-[calc(100vh-10rem)] p-2 mt-0.5 shadow overflow-y-auto border border-white/5 shadow-2xl outline outline-1 outline-base-content-300 z-10"
         >
           <div class="grid grid-cols-1 gap-3">
             <template v-for="theme in themes" :key="theme">
@@ -66,7 +66,7 @@ import { changeTheme, themes } from "@/theme"
       </div>
     </div>
     <div>
-      <slot/>
+      <slot />
     </div>
   </div>
 </template>
