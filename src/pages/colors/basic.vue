@@ -49,19 +49,19 @@ const additionalColors = {
       <br />
     </template>
 
-    <h1 id="additional" class="text-4xl font-bold pb-4">Additional Colors</h1>
-    <p>
-      These colors are not very useful but they are included in <code>daisy-ext</code> and are included
-      here for reference.
-    </p>
-    <br />
+<!--    <h1 id="additional" class="text-4xl font-bold pb-4">Additional Colors</h1>-->
+<!--    <p>-->
+<!--      These colors are not very useful but they are included in <code>daisy-ext</code> and are included-->
+<!--      here for reference.-->
+<!--    </p>-->
+<!--    <br />-->
 
-    <template v-for="(name, key) in additionalColors">
-      <h2 :id="name.replace(/\s+/g, '-').toLowerCase()" class="text-2xl font-bold">{{ name }}</h2>
-      <div class="flex justify-center p-4">
-        <Palette :firstColor="Color[key]" />
-      </div>
-      <br />
-    </template>
+<!--    <template v-for="(name, key) in additionalColors">-->
+<!--      <h2 :id="name.replace(/\s+/g, '-').toLowerCase()" class="text-2xl font-bold">{{ name }}</h2>-->
+<!--      <div class="flex justify-center p-4">-->
+<!--        <Palette :firstColor="Color[key]" />-->
+<!--      </div>-->
+<!--      <br />-->
+<!--    </template>-->
   </div>
 </template>
