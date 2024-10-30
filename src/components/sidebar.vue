@@ -68,9 +68,9 @@ const activeRoute = (expectedRoute: string) => {
           <RouterLink to="/docs/install" :class="activeRoute('/docs/install')">Install</RouterLink>
         </li>
         <li>
-          <RouterLink to="/docs/getting-started" :class="activeRoute('/docs/getting-started')"
-            >Getting Started</RouterLink
-          >
+          <RouterLink to="/docs/getting-started" :class="activeRoute('/docs/getting-started')">
+            Getting Started
+          </RouterLink>
         </li>
       </ul>
     </li>
@@ -88,14 +88,14 @@ const activeRoute = (expectedRoute: string) => {
     <li v-show="showColors">
       <ul class="menu gap-0.5 py-0 pe-0">
         <li>
-          <RouterLink to="/colors/basic" :class="activeRoute('/colors/basic')"
-            >Basic Colors</RouterLink
-          >
+          <RouterLink to="/colors/basic" :class="activeRoute('/colors/basic')">
+            Basic Colors
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/colors/advanced" :class="activeRoute('/colors/advanced')"
-            >Advanced Colors</RouterLink
-          >
+          <RouterLink to="/colors/advanced" :class="activeRoute('/colors/advanced')">
+            Advanced Colors
+          </RouterLink>
         </li>
       </ul>
     </li>

@@ -25,14 +25,14 @@ const shades = [
   50
 ]
 
-const props = defineProps<{
+defineProps<{
   firstColor: Color
   secondColor?: Color
 }>()
 </script>
 <template>
   <div class="grid grid-cols-4 gap-2">
-    <template v-for="shade in shades">
+    <template v-for="shade in shades" :key="shade">
       <div>
         <Swatch :firstColor="firstColor" :shade="shade" />
         <code>{{ firstColor }}{{ shade ? "-" : "" }}{{ shade }}</code>

@@ -7,7 +7,7 @@ import Nav from "@/components/nav.vue"
       <template #default>
         <RouterView />
       </template>
-      <template #fallback> </template>
+      <template #fallback></template>
     </Suspense>
   </Nav>
 </template>
