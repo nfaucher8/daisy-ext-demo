@@ -31,8 +31,8 @@
     </p>
     <br />
     <p>
-      Also by being a <b>Tailwind</b> plugin unused styles are automatically tree shaken. This means only the shades
-      used will be included in the final app which helps keep production stylesheet sizes small.
+      Also because <b>daisy-ext</b> is a <b>Tailwind</b> plugin unused styles are automatically tree shaken. This means
+      only the colors used will be included in the final app which helps keep the production bundle size small.
     </p>
     <br />
     <h1 class="text-4xl font-bold pb-4">Why?</h1>
